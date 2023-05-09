@@ -3,9 +3,8 @@ import React from 'react';
 import {Text, View, ScrollView, Image, Button} from 'react-native';
 import Icon from 'react-native-vector-icons/AntDesign';
 import Location from 'react-native-vector-icons/EvilIcons';
-import Phone from 'react-native-vector-icons/Feather';
-import Cloud from 'react-native-vector-icons/Feather';
-import Mail from 'react-native-vector-icons/MaterialIcons';
+import Feather from 'react-native-vector-icons/Feather';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Work from 'react-native-vector-icons/FontAwesome5';
 import {LinearGradient} from 'react-native-linear-gradient';
 
@@ -34,7 +33,14 @@ const App = () => {
           <Text className="text-[#000000]/50 text-base">
             Fashion Designer, Male
           </Text>
-          <Text className="text-[#000000] text-base font-bold">stars 5.0</Text>
+          <View className="flex-row items-center">
+            <MaterialIcons name="star-rate" size={10} color="#968702" />
+            <MaterialIcons name="star-rate" size={10} color="#968702" />
+            <MaterialIcons name="star-rate" size={10} color="#968702" />
+            <MaterialIcons name="star-rate" size={10} color="#968702" />
+            <MaterialIcons name="star-rate" size={10} color="#968702" />
+            <Text className="font-bold text-black ml-2">5.0</Text>
+          </View>
         </View>
         {/* location and contact */}
         <View className="flex flex-col mt-4">
@@ -49,18 +55,18 @@ const App = () => {
               <Text>Lagos, Nigeria</Text>
             </View>
             <View className="flex-row items-center">
-              <Phone name="phone" size={20} color="#0044C0" />
+              <Feather name="phone" size={20} color="#0044C0" />
               <Text>+2348139703721</Text>
             </View>
           </View>
           <View className="flex flex-row items-center justify-between w-[350px] my-4">
             <View className="flex-row items-center">
-              <Mail name="mail-outline" size={20} color="#0044C0" />
+              <MaterialIcons name="mail-outline" size={20} color="#0044C0" />
               <Text className="ml-1">samdee@gmail.com</Text>
             </View>
             <View className="flex-row items-center">
               <Text>Experience</Text>
-              <Text className="bg-blue-200 ml-2 rounded w-[52px] h-[20px] px-1">
+              <Text className="bg-blue-200 ml-2 rounded w-[52px] h-[20px] px-1 text-black">
                 Expert
               </Text>
             </View>
@@ -68,7 +74,7 @@ const App = () => {
         </View>
         {/* button */}
         <View className="w-[342px] h-10 rounded bg-[#0044c0]/100 flex-row items-center justify-center">
-          <Cloud name="cloud-snow" size={20} color="white" />
+          <Feather name="cloud-snow" size={20} color="white" />
           <Text className="text-white font-semibold ml-2">Send Message</Text>
         </View>
         {/* dividers */}
@@ -89,7 +95,7 @@ const App = () => {
         {/* summary */}
         <View className="w-[342px] h-[188px] rounded-xl border border-[#0044c0]/20">
           <View className="flex-row items-center m-4">
-            <Icon name="arrowleft" size={20} color="#0044c0" />
+            <Image source={require('../assets/Vector.png')} />
             <Text className="text-black font-bold ml-4">Summary</Text>
           </View>
           <View className="w-[342px] border border-[#0044c0]/20 mb-4"></View>
@@ -107,7 +113,7 @@ const App = () => {
         {/* work experience */}
         <View className="w-[342px] h-[225px] rounded-xl border border-[#0044c0]/20 my-6">
           <View className="flex-row items-center m-4">
-            <Work name="briefcase" size={20} color="#0044c0" />
+            <Image source={require('../assets/briefcase.png')} />
             <Text className="text-black font-bold ml-4">Work Experience</Text>
           </View>
           <View className="w-[342px] border border-[#0044c0]/20 mb-4"></View>
@@ -145,7 +151,7 @@ const App = () => {
         {/* skills */}
         <View className="w-[342px] h-[179px] rounded-xl border border-[#0044c0]/20">
           <View className="flex-row items-center m-4">
-            <Icon name="arrowleft" size={20} color="#0044c0" />
+            <MaterialIcons name="insert-chart" size={20} color="#0044c0" />
             <Text className="text-black font-bold ml-4">Skills</Text>
           </View>
           <View className="w-[342px] border border-[#0044c0]/20 mb-4"></View>
@@ -171,7 +177,7 @@ const App = () => {
         {/* portfolio */}
         <View className="w-[342px] h-[237px] rounded-xl border border-[#0044c0]/20 my-6">
           <View className="flex-row items-center m-4">
-            <Icon name="arrowleft" size={20} color="#0044c0" />
+            <Image source={require('../assets/Vector.png')} />
             <Text className="text-black font-bold ml-4">Job Portfolio</Text>
           </View>
           <View className="w-[342px] border border-[#0044c0]/20 mb-4"></View>
@@ -201,13 +207,33 @@ const App = () => {
         </View>
         {/* ratings */}
         <View className="w-[342px] h-[331px] rounded-xl border border-[#0044c0]/20 mb-6">
-          <View className="flex-row items-center m-4">
-            <Icon name="arrowleft" size={20} color="#0044c0" />
-            <Text className="text-black font-bold ml-4">
-              Ratings and Reviews (8)
-            </Text>
+          <View className="flex-row items-center justify-between m-4">
+            <View className="flex-row items-center">
+              <MaterialIcons name="star" size={20} color="#0044c0" />
+              <Text className="text-black font-bold ml-4">
+                Ratings and Reviews (8)
+              </Text>
+            </View>
+            <Text className="text-black underline">See More</Text>
           </View>
           <View className="w-[342px] border border-[#0044c0]/20 mb-4"></View>
+          <View className="flex-row items-center justify-between my-2 mx-4">
+            <View className="flex-row items-center">
+              <Image source={require('../assets/rate.png')} />
+              <View className="ml-2">
+                <Text className="text-black font-bold">Allen Daniels</Text>
+                <View className="flex-row items-center">
+                  <MaterialIcons name="star-rate" size={10} color="#968702" />
+                  <MaterialIcons name="star-rate" size={10} color="#968702" />
+                  <MaterialIcons name="star-rate" size={10} color="#968702" />
+                  <MaterialIcons name="star-rate" size={10} color="#968702" />
+                  <MaterialIcons name="star-rate" size={10} color="#968702" />
+                  <Text className="font-bold text-black">5.0</Text>
+                </View>
+              </View>
+            </View>
+            <Text className="text-black">17 Hours Ago</Text>
+          </View>
           <View className="w-[302px] h-[97px] mx-5">
             <Text className="text-xs">
               There has been a password update on your account. Kindly reach out
@@ -219,7 +245,7 @@ const App = () => {
             </Text>
             <View className="w-[283px] border border-[#0044c0]/20 my-4"></View>
           </View>
-          <View className="w-[311px] h-[61px] rounded-xl border border-[#0044c0] flex items-center justify-center mt-10 mx-5">
+          <View className="w-[311px] h-[61px] rounded-xl border border-[#0044c0] flex items-center justify-center mt-8 mb-4 mx-5">
             <Text className="text-[#0044c0] font-semibold">Write a Review</Text>
           </View>
         </View>
