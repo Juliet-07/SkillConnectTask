@@ -14,6 +14,11 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-SkillsConnectTask-SkillsConnectTaskTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-SkillsConnectTask-SkillsConnectTaskTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		F56DB7724B86423E908AF498 /* Carlito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12EA19B22E51426FB7F98B46 /* Carlito-Bold.ttf */; };
+		6D7674A457294284979F9007 /* Carlito-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C3B53B1987A4D018EFA123B /* Carlito-BoldItalic.ttf */; };
+		3EFBBA85EDF04D46A63EE89A /* Carlito-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDBA8201C9554CA6B11A97EB /* Carlito-Italic.ttf */; };
+		1CA17C8944224F4A985A9461 /* Carlito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E0A26E7A06742EDB346A1A0 /* Carlito-Regular.ttf */; };
+		9CF3127751D34F06B0A87064 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = B68651788912432AA36A7CBC /* OFL.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = SkillsConnectTask/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-SkillsConnectTask-SkillsConnectTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkillsConnectTask-SkillsConnectTaskTests.release.xcconfig"; path = "Target Support Files/Pods-SkillsConnectTask-SkillsConnectTaskTests/Pods-SkillsConnectTask-SkillsConnectTaskTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		12EA19B22E51426FB7F98B46 /* Carlito-Bold.ttf */ = {isa = PBXFileReference; name = "Carlito-Bold.ttf"; path = "../assets/fonts/Carlito/Carlito-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8C3B53B1987A4D018EFA123B /* Carlito-BoldItalic.ttf */ = {isa = PBXFileReference; name = "Carlito-BoldItalic.ttf"; path = "../assets/fonts/Carlito/Carlito-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EDBA8201C9554CA6B11A97EB /* Carlito-Italic.ttf */ = {isa = PBXFileReference; name = "Carlito-Italic.ttf"; path = "../assets/fonts/Carlito/Carlito-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7E0A26E7A06742EDB346A1A0 /* Carlito-Regular.ttf */ = {isa = PBXFileReference; name = "Carlito-Regular.ttf"; path = "../assets/fonts/Carlito/Carlito-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B68651788912432AA36A7CBC /* OFL.txt */ = {isa = PBXFileReference; name = "OFL.txt"; path = "../assets/fonts/Carlito/OFL.txt"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +132,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				24342E7D91364594B7A4A430 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -147,6 +158,19 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		24342E7D91364594B7A4A430 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				12EA19B22E51426FB7F98B46 /* Carlito-Bold.ttf */,
+				8C3B53B1987A4D018EFA123B /* Carlito-BoldItalic.ttf */,
+				EDBA8201C9554CA6B11A97EB /* Carlito-Italic.ttf */,
+				7E0A26E7A06742EDB346A1A0 /* Carlito-Regular.ttf */,
+				B68651788912432AA36A7CBC /* OFL.txt */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -244,6 +268,11 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				F56DB7724B86423E908AF498 /* Carlito-Bold.ttf in Resources */,
+				6D7674A457294284979F9007 /* Carlito-BoldItalic.ttf in Resources */,
+				3EFBBA85EDF04D46A63EE89A /* Carlito-Italic.ttf in Resources */,
+				1CA17C8944224F4A985A9461 /* Carlito-Regular.ttf in Resources */,
+				9CF3127751D34F06B0A87064 /* OFL.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

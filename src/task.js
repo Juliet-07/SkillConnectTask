@@ -17,7 +17,7 @@ const App = () => {
           <View className="relative right-24">
             <Icon name="arrowleft" size={30} color="black" />
           </View>
-          <Text className="text-[#0044c0] font-bold text-2xl">
+          <Text className="text-[#0044c0] font-carlito font-bold text-2xl">
             View Profile
           </Text>
         </View>
